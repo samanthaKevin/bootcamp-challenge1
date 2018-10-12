@@ -1,0 +1,105 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    background-color:darkgreen;
+    width:100%; 
+    height:50px;
+}
+nav ul{
+    /* float:left */
+    list-style-type:none;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    /* display: inline; */
+    float: left;
+    border-right: 1px solid darkgreen;
+}
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+nav ul li a.active{
+    background: #333;
+    color: #fff;
+}
+nav h1{
+    margin: 0;
+    padding: 8px 16px;
+}
+input, select {
+    width:100%;
+    height:25px;
+}
+.signheader{
+    /* width: 100%; */
+    min-height: 30px;
+    padding: 10px 16px 5px 170px;
+    background: darkgreen;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    border: 1px solid darkgreen;
+}
+.borders{
+    border: 1px solid black;
+}
+.row{
+    padding-top: 10vh;
+    width: 100%;
+    height: 100vh;
+}
+.column1 {
+    float: left;
+    width: 53%;
+    padding: 20px;
+    /* height: 300px; Should be removed. Only for demonstration */
+}
+.column2 {
+    float: left;
+    width:33%;
+    padding: 10px;
+    /* height: 300px; Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.login-image{
+    margin-left:300px;
+}
+.btn{
+    border-radius: 5px; 
+    height:30px;
+}
+.btn-lg{
+    width: 100%;
+}
+.btn-m{
+    width:50%;
+}
+.btn-small{
+    width: 30%;
+}
+.forestgreen{
+    background-color:forestgreen;
+}
+.red{
+    background-color: red;
+}
