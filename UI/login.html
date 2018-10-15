@@ -2,16 +2,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Store Manager</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/storemanager.js"></script>
     </head>
     <body>
         <!-- <nav style="background-color:darkgreen; width: 100%; height:100px">
             <h2>Store Manager</h2>
         </nav> -->
-            <div class="row">
+            <div class="logincontent row">
                 <center><h1>Store Manager</h1></center>
                 <div class="column1">
                     <div class="login-image">
@@ -24,14 +25,15 @@
                         <label>Email </label><br><input type="email" name="email"><br><br>
                         <label>Password </label><br><input type="password" name="password"><br><br>
                         <label>Log In as </label><br>
-                        <select>
-                            <option>Attendant</option>
-                            <option>Admin</option>
+                        <select id="loginoption" onclick="attendant_admin()">
+                            <option></option>
+                            <option value="attendant">Attendant</option>
+                            <option value="admin">Admin</option>
                         </select>
                         <br><br>
                         
                     </form>
-                    <a href="home.html"><button class="btn btn-lg forestgreen">Log In</button></a>
+                    <a href="" id="login"><button class="btn btn-lg forestgreen">Log In</button></a>
                 </div>
             </div>
 

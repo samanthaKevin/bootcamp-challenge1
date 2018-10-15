@@ -5,14 +5,15 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/storemanager.js"></script>
     </head>
     <body>
             <nav>
-                    <div style="float:left; width: 20%">
-                         <img src="img/logo-header.png" width="100%" height="48px" style="padding-left:20px">
+                    <div id="logo">
+                         <img src="img/logo-header.png" width="100%" height="48px" class="logoimg">
                     </div>
-                    <div style="float:left; width:20%; padding-left:100px; text-align: center ">
+                    <div id="adminheaderheading">
                          <h1>Store Manager</h1>
                     </div>
                     <ul>
@@ -22,43 +23,43 @@
                         <li><a href="addattendant.html">Add Attendant</a></li>
                         <li><a href="adminaddproduct.html">Add Product</a></li>
                         <li><a href="#">Settings</a></li>
-                        <li style="float:right; padding-right:5px"><img src="img/empty-profile.png" width="50px" height="40px" style="border-radius:5%"></li>
+                        <li id="profilepic"><img src="img/empty-profile.png" width="50px" height="40px" ></li>
                     </ul>
             </nav> 
        <!-- class="borders" -->
-       <section style="width:100%; height:5vh; margin-top:60px; padding-top: 5px">
-            <div style="float:right; width:5%;">
-                    <a href="login.html"><button class="btn btn-s" style="background-color:red">Log Out</button></a>
+       <section class="secondheader">
+            <div class="logout">
+                    <a href="login.html"><button class="btn btn-s red" >Log Out</button></a>
             </div>
-            <div style="float:right; width:5%; margin-left:20px" >
+            <div class="cart" >
                     <img src="img/cart.jpeg" width="20px" height="20px">
             </div>   
-            <div style="float:right; width:20%;">
-                <input type="text" placeholder="search" style="width:100%">
+            <div class="search">
+                <input type="text" placeholder="search">
             </div>
            
        </section>
-       <section style="margin-top: 10px; min-height: 100vh;" >
+       <section content>
            <h2>Attendants</h2>
-           <div class="borders" style="width:80%; height:30vh;">
-                <div style="float:left; width:30%"><img src="img/cutegirl.jpg" width="250px" height="180px"></div>
-                <div style="float:left; width:50%">
+           <div class="borders item">
+                <div class="itemimage"><img src="img/cutegirl.jpg" width="250px" height="180px"></div>
+                <div class="itemdetails">
                         <br>
                     <span>Name: </span>Mutenyo Charity<br><br>
                     <span>Age:</span>24<br><br>
                     <span>Total sales worth:</span>3,000,000<br><br>
-                    <button class="btn btn-m" style="background-color:red">Admin?</button>
+                    <button id="makeadmin1" class="btn btn-m red" onclick="makeadmin1()">Make admin</button>
                 </div>
            </div>
            <br>
-           <div class="borders" style="width:80%; height:30vh;">
-                <div style="float:left; width:30%"><img src="img/boy.jpg" width="250px" height="180px"></div>
-                <div style="float:left; width:50%">
+           <div class="borders item">
+                <div class="itemimage"><img src="img/boy.jpg" width="250px" height="180px"></div>
+                <div class="itemdetails">
                         <br>
                     <span>Name: </span>Masembe Steven<br><br>
                     <span>Age:</span>30<br><br>
                     <span>Total sales worth:</span>500,000/=<br><br>
-                    <button class="btn btn-m" style="background-color:red">Admin?</button>
+                    <button id="makeadmin2" class="btn btn-m red" onclick="makeadmin2()">Make admin</button>
                 </div>
            </div>
        </section>

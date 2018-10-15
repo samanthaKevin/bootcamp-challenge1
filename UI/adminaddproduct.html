@@ -5,14 +5,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
             <nav>
-                    <div style="float:left; width: 20%">
-                         <img src="img/logo-header.png" width="100%" height="48px" style="padding-left:20px">
+                    <div id="logo">
+                         <img src="img/logo-header.png" width="100%" height="48px" id="logoimg">
                     </div>
-                    <div style="float:left; width:20%; padding-left:100px; text-align: center ">
+                    <div id="adminheaderheading">
                          <h1>Store Manager</h1>
                     </div>
                     <ul>
@@ -22,24 +22,24 @@
                         <li><a href="addattendant.html">Add Attendant</a></li>
                         <li><a href="adminaddproduct.html" class="active">Add Product</a></li>
                         <li><a href="#">Settings</a></li>
-                        <li style="float:right; padding-right:5px"><img src="img/empty-profile.png" width="50px" height="40px" style="border-radius:5%"></li>
+                        <li id="profilepic"><img src="img/empty-profile.png" width="50px" height="40px"></li>
                     </ul>
                 </nav>  
        <!-- class="borders" -->
-       <section style="width:100%; height:5vh; margin-top:60px; padding-top: 5px">
-            <div style="float:right; width:5%;">
-                    <a href="login.html"><button class="btn btn-s" style="background-color:red">Log Out</button></a>
+       <section class="secondheader">
+            <div class="logout">
+                    <a href="login.html"><button class="btn btn-s red">Log Out</button></a>
             </div>           
        </section>
 
-       <section style="margin-top: 10px; min-height: 100vh;" >
-        <div style="width:50%; padding-left:20%; padding-top: 1%;">
+       <section class="content">
+        <div class="additem">
             <h2>Add Item</h2>
            <form>
                 <label>Name</label><br><input type="text" name="name"><br><br>
                 <label>Quantity</label><br><input type="text" name="qty"><br><br>
                 <label>Unit Price</label><br><input type="text" name="unitprice"><br><br>
-                <label>Quantity</label><br>
+                <label>Category</label><br>
                 <select>
                     <option></option>
                     <option>Cutlery</option>
@@ -48,7 +48,7 @@
                     <option>Toiletries</option>
                     <option>Scholastic</option>
                 </select><br><br>
-                <button class="btn btn-lg" style="background-color:forestgreen">Add</button>
+                <button class="btn btn-lg forestgreen">Add</button>
                 <br><br>
            </form>
         </div>
