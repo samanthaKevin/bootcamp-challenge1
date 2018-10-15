@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/storemanager.js"></script>
+    </head>
+    <body>
+       <nav>
+           <div id="logo">
+                <img src="img/logo-header.png" id="logoimg" width="100%" height="48px">
+           </div>
+           <div id="headerheading">
+                <h1>Store Manager</h1>
+           </div>
+           <ul>
+               <li><a href="home.html" class="active">Products</a></li>
+               <li><a href="attendant_sales.html">Sales</a></li>
+               <li><a href="addproduct.html">Add Product</a></li>
+               <li><a href="profile.html">Profile</a></li>
+               <li id="profilepic"><img src="img/empty-profile.png" width="50px" height="40px"></li>
+           </ul>
+       </nav> 
+       <!-- class="borders" -->
+       <section class="secondheader">
+            <div class="logout">
+                    <a href="login.html"><button class="btn btn-s red">Log Out</button></a>
+            </div>
+            <div class="cart">
+                <span id="cartnumber">0</span>
+                <img src="img/cart.jpeg" width="20px" height="20px">
+            </div>   
+            <div class="search">
+                <input type="text" placeholder="search">
+            </div>
+           
+       </section>
+       <section class="content">
+           <h2>All Products</h2>
+           <div class="borders item">
+                <div class="itemimage"><img src="img/velvet.jpg" width="250px" height="180px"></div>
+                <div class="itemdetails">
+                        <br>
+                    <span>Name: </span>Velvet Cake<br><br>
+                    Quantity:<span id="qty1">1</span><br><br>
+                    <span >Unit Price:</span>11,000/=<br><br>
+                    <button class="btn btn-m red" id="addbtn1" onclick="addtocart1()">Add to Cart</button>
+                </div>
+           </div>
+           <br>
+           <div class="borders item">
+                <div class="itemimage"><img src="img/creamnail.jpg" width="250px" height="180px"></div>
+                <div class="itemdetails">
+                        <br>
+                    <span>Name: </span>Creamware Expresso cup<br><br>
+                    Quantity:<span id="qty2">3</span><br><br>
+                    <span>Unit Price:</span>30,000/=<br><br>
+                    <button class="btn btn-m red" id="addbtn2" onclick="addtocart2()">Add to Cart</button>
+                </div>
+           </div>
+           <br>
+           <div class="borders item">
+                <div class="itemimage"><img src="img/champion.jpg" width="250px" height="180px"></div>
+                <div class="itemdetails">
+                        <br>
+                    <span>Name: </span>Champion A4 Exercise book<br><br>
+                    Quantity:<span id="qty3">30</span><br><br>
+                    <span>Unit Price:</span>5,000/=<br><br>
+                    <button class="btn btn-m red" id="addbtn3" onclick="addtocart3()">Add to Cart</button>
+                </div>
+           </div>
+       </section>
+    </body>
+</html>
